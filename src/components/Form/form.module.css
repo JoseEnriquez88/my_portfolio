@@ -48,15 +48,23 @@
 }
 
 @media (max-width: 800px) {
+  .form {
+    height: 100%;
+  }
+
   .input,
   .textarea {
     width: 400px;
   }
 
   .toaster {
-    margin-bottom: -70px;
+    margin-bottom: -500px;
     margin-left: -6px;
   }
+}
+
+@media (max-width: 720px) {
+  /* .toaster { */
 }
 
 @media (max-width: 400px) {
