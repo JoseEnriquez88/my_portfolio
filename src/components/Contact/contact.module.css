@@ -93,10 +93,13 @@
 
   .subContainer {
     margin-top: 100px;
+    height: 500px;
   }
 
   .formContainer {
     width: 98%;
+    height: 100%;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
