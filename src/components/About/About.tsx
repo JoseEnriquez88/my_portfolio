@@ -1,8 +1,8 @@
 "use client";
 import styles from "./about.module.css";
 import Image from "next/image";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import {
   titleVariants,
   articleVariants,
@@ -15,7 +15,31 @@ import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About: React.FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { margin: "0px 0px -50% 0px" });
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    const current = ref.current;
+
+    if (current) {
+      observer.observe(current);
+    }
+    return () => {
+      if (current) {
+        observer.unobserve(current);
+      }
+    };
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -38,7 +62,6 @@ const About: React.FC = () => {
                   variants={articleVariants}
                   initial="initial"
                   animate={isInView && "animate"}
-                  ref={ref}
                 >
                   Soy un desarrollador web con fuertes habilidades en HTML, CSS
                   y JavaScript, lo que me permite crear interfaces atractivas.
@@ -53,7 +76,6 @@ const About: React.FC = () => {
                   variants={socialsVariants}
                   initial="initial"
                   animate={isInView && "animate"}
-                  ref={ref}
                 >
                   <a
                     href={socials.Github}
@@ -95,7 +117,6 @@ const About: React.FC = () => {
               variants={articleVariants}
               initial="initial"
               animate={isInView && "animate"}
-              ref={ref}
             >
               <Image
                 src="/SVG/about.png"
