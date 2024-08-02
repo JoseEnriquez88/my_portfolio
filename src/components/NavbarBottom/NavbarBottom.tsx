@@ -1,10 +1,10 @@
 import styles from "./navbarBottom.module.css";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import HomeIcon from "@mui/icons-material/Home";
-import WorkIcon from "@mui/icons-material/Work";
-import PersonIcon from "@mui/icons-material/Person";
-import MenuIcon from "@mui/icons-material/Menu";
+// import HomeIcon from "@mui/icons-material/Home";
+// import WorkIcon from "@mui/icons-material/Work";
+// import PersonIcon from "@mui/icons-material/Person";
+// import MenuIcon from "@mui/icons-material/Menu";
 // import IoMdContact from "@mui/icons-material/ContactPage";
 import {
   IoMdHome,
@@ -32,39 +32,39 @@ const NavbarBottom: React.FC = () => {
       <ul className={styles.iconContainer}>
         <Link to="home">
           <li>
-            <span className={styles.icon} role="img">
-              <IoMdHome />
+            <span role="img">
+              <IoMdHome className={styles.icon} />
             </span>
             <span className={styles.title}>Inicio</span>
           </li>
         </Link>
         <Link to="projects">
           <li>
-            <span className={styles.icon} role="img">
-              <IoMdBriefcase />
+            <span role="img">
+              <IoMdBriefcase className={styles.icon} />
             </span>
             Proyectos
           </li>
         </Link>
         <Link to="about">
           <li>
-            <span className={styles.icon} role="img">
-              <IoMdPersonAdd />
+            <span role="img">
+              <IoMdPersonAdd className={styles.icon} />
             </span>
             Sobre mí
           </li>
         </Link>
         <Link to="contact">
           <li>
-            <span className={styles.icon} role="img">
-              <IoMdContact />
+            <span role="img">
+              <IoMdContact className={styles.icon} />
             </span>
             Contacto
           </li>
         </Link>
         <li onClick={handleMenuClick}>
-          <span className={styles.icon} role="img">
-            <IoIosMenu />
+          <span role="img">
+            <IoIosMenu className={styles.icon} />
           </span>
           Redes
         </li>
