@@ -24,13 +24,6 @@ a {
   color: inherit;
 }
 
-/* .loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
-
 :root {
   --color-green1: #078343;
   --color-green2: #11a759;
