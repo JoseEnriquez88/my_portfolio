@@ -4,6 +4,7 @@
 } */
 
 .drawer {
+  font-family: Prototype, sans-serif;
   background-color: var(--color-background-card-button);
   height: 100vh;
 }
@@ -26,7 +27,7 @@
 } */
 
 .list {
-  margin-top: 50px;
+  margin-top: 20px;
   color: var(--color-text-color);
 }
 
