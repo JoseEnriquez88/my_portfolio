@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import styles from "./itemsContact.module.css";
+import styles from "./itemscontact.module.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
