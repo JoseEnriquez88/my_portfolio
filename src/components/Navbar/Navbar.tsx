@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const navColored = () => {
-      if (typeof window !== "undefined" && window.scrollY >= 950) {
+      if (typeof window !== "undefined" && window.scrollY >= 550) {
         setNavbar(true);
       } else {
         setNavbar(false);
