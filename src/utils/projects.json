@@ -20,21 +20,21 @@
     },
     {
       "id": 3,
+      "name": "Encriptador/Desencriptador",
+      "type": "funcionalidad web.",
+      "repo": "https://github.com/JoseEnriquez88/Alura",
+      "deploy": null,
+      "image": "/projects/encriptador.png",
+      "description": "Es una aplicación que encripta/desencripta textos en el cual se puede intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada. "
+    },
+    {
+      "id": 4,
       "name": "Poke App",
       "type": "Pokedex",
       "repo": "https://github.com/JoseEnriquez88/Pokemon",
       "deploy": null,
       "image": "/projects/landingPoke.png",
       "description": "Aplicación diseñada para renderizar y crear pokemones personalizados, ofreciendo la capacidad de ordenarlos por tipo, ataque o alfabéticamente. Además, permite filtrar entre los pokémon de la API y los añadidos a la base de datos por el usuario."
-    },
-    {
-      "id": 4,
-      "name": "Rick & Morty",
-      "type": "Interactive R&M",
-      "repo": "https://github.com/JoseEnriquez88/Rick_And_Morty",
-      "deploy": null,
-      "image": "/projects/homeRick.png",
-      "description": "Aplicación en la que se muestran personajes de la serie animada de televisión Rick & Morty en formatos de tarjetas. Puede buscar los personajes por su ID, con un rango de personajes de hasta 826. Incluye una función de inicio de sesión para acceder y guardar personajes favoritos."
     }
   ]
 }
