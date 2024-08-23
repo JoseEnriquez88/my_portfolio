@@ -29,6 +29,12 @@
   border-radius: 20px;
   overflow: hidden;
   object-fit: cover;
+  filter: brightness(50%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.image:hover {
+  filter: brightness(100%);
 }
 
 .content {
