@@ -39,8 +39,6 @@ const Hero = () => {
             developer
           </h2>
           <a
-            // href="/resume/spanishResume.pdf"
-            // download="spanishResume.pdf"
             href={process.env.NEXT_PUBLIC__RESUME_LINK}
             target="_blank"
             rel="noopener noreferrer"
