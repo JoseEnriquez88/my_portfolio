@@ -24,7 +24,8 @@
 .linksContainer {
   display: flex;
   margin: 0 auto;
-  gap: 2rem;
+  margin-top: 10px;
+  gap: 2.5rem;
 }
 
 .linksContainer a {
@@ -52,7 +53,8 @@
   margin: 0 auto;
   gap: 1rem;
   color: var(--color-copyright);
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
+  margin-top: 5px;
   font-size: 12px;
   font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
 }
