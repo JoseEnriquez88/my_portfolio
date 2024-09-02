@@ -6,7 +6,7 @@ import { titleVariants } from "@/utils/motions/contactMotion";
 import Form from "../Form/Form";
 import ItemsContact from "../ItemsContact/ItemsContact";
 import Footer from "../Footer/Footer";
-import BottomNav from "../NavbarBottom/BottomNav";
+import NavbarBottom from "../NavbarBottom/NavbarBottom";
 
 const Contact: React.FC = () => {
   const ref = useRef<HTMLHeadingElement | null>(null);
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      {!isMobile ? <Footer /> : <BottomNav />}
+      {!isMobile ? <Footer /> : <NavbarBottom />}
     </div>
   );
 };
