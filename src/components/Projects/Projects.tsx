@@ -3,7 +3,7 @@ import styles from "./projects.module.css";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { textVariants } from "@/utils/motions/projectsMotion";
-import CardsList from "../Cards/CardsList";
+import CardsList from "../CardList/CardsList";
 
 const Projects: React.FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
