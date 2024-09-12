@@ -37,7 +37,7 @@
 .active .iconContainer,
 .active .icon,
 .active .title {
-  color: var(--color-primary);
+  color: var(--color-green2);
   transition: color 0.1s ease-in-out;
 }
 
