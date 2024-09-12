@@ -21,7 +21,8 @@
 .nav a:hover {
   color: var(--color-primary);
 }
+
 .active {
   transition: color 0.2s ease-in-out;
-  color: var(--color-primary);
+  color: var(--color-green2);
 }
