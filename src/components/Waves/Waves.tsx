@@ -1,16 +1,21 @@
 import { Fragment } from "react";
+import { motion } from "framer-motion";
 import styles from "./waves.module.css";
+import { svgVariants } from "@/utils/motions/wavesMotion";
 
 const Waves = () => {
   return (
     <Fragment>
-      <svg
+      <motion.svg
         className={styles.waves}
         xmlns="http://www.w3.org/2000/svg"
         xlinkHref="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
         preserveAspectRatio="none"
         shapeRendering="auto"
+        variants={svgVariants}
+        initial="hidden"
+        animate="visible"
       >
         <defs>
           <path
@@ -44,7 +49,7 @@ const Waves = () => {
             fill="var(--color-primary)"
           />
         </g>
-      </svg>
+      </motion.svg>
     </Fragment>
   );
 };
