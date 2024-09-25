@@ -43,11 +43,11 @@ const Footer: React.FC = () => {
         <div className={styles.textContainer}>
           &copy; {new Date().getFullYear()}: Jose Enriquez
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="logo"
             className={styles.logo}
-            width={25}
-            height={25}
+            width={12}
+            height={12}
           />
         </div>
       </div>
