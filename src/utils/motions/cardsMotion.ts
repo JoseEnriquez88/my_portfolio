@@ -8,12 +8,12 @@ export const cardsContainerVariants = {
 
 export const cardsVariants = {
   initial: {
-    y: 0,
     opacity: 0,
+    y: 50,
   },
   animate: {
-    y: -25,
     opacity: 1,
+    y: 0,
     transition: {
       duration: 1.5,
     },
