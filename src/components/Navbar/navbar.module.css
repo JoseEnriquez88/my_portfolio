@@ -18,8 +18,7 @@
 }
 
 .logo {
-  height: 80px;
-  width: 100px;
+  margin: 10px;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease-in-out;
 }

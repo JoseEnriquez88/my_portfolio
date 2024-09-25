@@ -35,11 +35,11 @@ const Navbar: React.FC = () => {
       >
         <Link to="home">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="logo"
             className={styles.logo}
             width={50}
-            height={50}
+            height={45}
           />
         </Link>
         <div className={styles.itemsContainer}>
