@@ -12,6 +12,9 @@ export const metadata = {
     "Front End",
     "Developer",
   ],
+  icons: {
+    icon: "../../public/logo.svg",
+  },
 };
 
 export default function RootLayout({
