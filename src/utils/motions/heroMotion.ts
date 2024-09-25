@@ -1,22 +1,29 @@
 export const textVariants = {
   initial: {
-    y: 0,
     opacity: 0,
+    y: 0,
   },
   animate: {
-    y: -25,
     opacity: 1,
+    y: -25,
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
     },
   },
-  scrollButton: {
+};
+
+export const childVariants = {
+  initial: {
     opacity: 0,
-    y: 50,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
     transition: {
-      duration: 2,
-      repeat: Infinity,
+      duration: 0.8,
     },
   },
 };
