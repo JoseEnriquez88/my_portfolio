@@ -53,11 +53,11 @@ const SocialsLinks: React.FC<SocialsLinksProps> = ({ open, onClose }) => {
             <ArrowForwardIcon />
           </span>
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="logo"
             className={styles.image}
-            width={80}
-            height={80}
+            width={50}
+            height={50}
           />
         </div>
         <List className={styles.list}>
