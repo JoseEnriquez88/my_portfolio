@@ -2,10 +2,10 @@
 import styles from "./hero.module.css";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
-import { textVariants } from "@/utils/motions/heroMotion";
+import { textVariants, childVariants } from "@/utils/motions/heroMotion";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import Waves from "../Waves/Waves";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   const [downloadCount, setDownloadCount] = useState<number>(0);
@@ -23,8 +23,10 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <h1 className={styles.name}>Jose Enriquez</h1>
-          <h2>
+          <motion.h1 className={styles.name} variants={childVariants}>
+            Jose Enriquez
+          </motion.h1>
+          <motion.h2 variants={childVariants}>
             <span className={styles.seniority}>
               <Typewriter
                 words={["React", "Web"]}
@@ -37,17 +39,18 @@ const Hero = () => {
               />
             </span>{" "}
             developer
-          </h2>
-          <a
+          </motion.h2>
+          <motion.a
             href={process.env.NEXT_PUBLIC__RESUME_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            variants={childVariants}
           >
             Ver resumen
             <span className={styles.icon}>
               <CallMadeIcon />
             </span>
-          </a>
+          </motion.a>
         </motion.div>
       </div>
       <div className={styles.wavesContainer}>
