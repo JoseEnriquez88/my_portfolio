@@ -2,7 +2,7 @@
 import styles from "./projects.module.css";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { textVariants } from "@/utils/motions/projectsMotion";
+import { projectVariants, childVariants } from "@/utils/motions/projectsMotion";
 import CardsList from "../CardList/CardsList";
 
 const Projects: React.FC = () => {
@@ -14,12 +14,17 @@ const Projects: React.FC = () => {
       <div className={styles.wrapper}>
         <motion.div
           className={styles.textContainer}
-          variants={textVariants}
+          variants={projectVariants}
           ref={ref}
+          initial="initial"
           animate={isInView && "animate"}
         >
-          <h1 className={styles.title}>Proyectos</h1>
-          <h2>Ver mis últimos proyectos</h2>
+          <motion.h1 className={styles.title} variants={childVariants}>
+            Proyectos
+          </motion.h1>
+          <motion.h2 variants={childVariants}>
+            Ver mis últimos proyectos
+          </motion.h2>
         </motion.div>
         <div className={styles.projectContainer}>
           <CardsList />
