@@ -73,17 +73,19 @@
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .container,
   .wrapper {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
+    padding: 0;
   }
 
   .dataContainer {
     width: 100vw;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
   }
 
   .name {
@@ -94,11 +96,12 @@
   .dataContainer h2 {
     font-size: 40px;
   }
+
   .seniority {
     font-size: 40px;
   }
 
   .wavesContainer {
-    margin-top: -400px;
+    margin-top: -500px;
   }
 }
