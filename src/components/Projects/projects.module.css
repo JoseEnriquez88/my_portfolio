@@ -47,17 +47,28 @@
   margin-top: 100px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  .container,
   .wrapper {
-    width: 100vw;
+    width: 100%;
+    height: auto;
+  }
+
+  .wrapper {
+    margin-top: 0;
   }
 
   .textContainer {
-    width: 100vw;
+    margin: 0;
+    margin-top: 50px;
   }
 
   .title {
     font-size: 50px;
-    margin-top: -50px;
+  }
+
+  .textContainer h2 {
+    font-size: 30px;
+    text-align: center;
   }
 }
