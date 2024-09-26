@@ -19,6 +19,7 @@
 }
 
 .img {
+  object-fit: contain;
   height: 100px;
   margin: 0 20px;
   filter: brightness(70%);
@@ -29,10 +30,14 @@
   filter: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   @keyframes slide {
     to {
       transform: translate(calc(-100vw - 100rem));
     }
+  }
+
+  .img {
+    object-fit: contain;
   }
 }
