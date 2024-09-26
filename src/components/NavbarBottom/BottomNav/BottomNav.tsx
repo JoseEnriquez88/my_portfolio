@@ -24,36 +24,76 @@ const NavbarBottom: React.FC = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.iconContainer}>
-        <Link to="home" activeClass={styles.active} spy={true} smooth={true} offset={-70} duration={500}>
+        <Link
+          to="home"
+          activeClass={styles.active}
+          spy={true}
+          smooth={true}
+          // offset={-20}
+          duration={500}
+        >
           <li className={styles.navItem}>
             <span role="img" className={styles.iconWrapper}>
               <IoMdHome className={`${styles.icon} ${styles.activeIcon}`} />
             </span>
-            <span className={`${styles.title} ${styles.activeTitle}`}>Inicio</span>
+            <span className={`${styles.title} ${styles.activeTitle}`}>
+              Inicio
+            </span>
           </li>
         </Link>
-        <Link to="projects" activeClass={styles.active} spy={true} smooth={true} offset={-70} duration={500}>
+        <Link
+          to="projects"
+          activeClass={styles.active}
+          spy={true}
+          smooth={true}
+          // offset={-20}
+          duration={500}
+        >
           <li className={styles.navItem}>
             <span role="img" className={styles.iconWrapper}>
-              <IoMdBriefcase className={`${styles.icon} ${styles.activeIcon}`} />
+              <IoMdBriefcase
+                className={`${styles.icon} ${styles.activeIcon}`}
+              />
             </span>
-            <span className={`${styles.title} ${styles.activeTitle}`}>Proyectos</span>
+            <span className={`${styles.title} ${styles.activeTitle}`}>
+              Proyectos
+            </span>
           </li>
         </Link>
-        <Link to="about" activeClass={styles.active} spy={true} smooth={true} offset={-70} duration={500}>
+        <Link
+          to="about"
+          activeClass={styles.active}
+          spy={true}
+          smooth={true}
+          // offset={-20}
+          duration={500}
+        >
           <li className={styles.navItem}>
             <span role="img" className={styles.iconWrapper}>
-              <IoMdPersonAdd className={`${styles.icon} ${styles.activeIcon}`} />
+              <IoMdPersonAdd
+                className={`${styles.icon} ${styles.activeIcon}`}
+              />
             </span>
-            <span className={`${styles.title} ${styles.activeTitle}`}>Sobre mí</span>
+            <span className={`${styles.title} ${styles.activeTitle}`}>
+              Sobre mí
+            </span>
           </li>
         </Link>
-        <Link to="contact" activeClass={styles.active} spy={true} smooth={true} offset={-70} duration={500}>
+        <Link
+          to="contact"
+          activeClass={styles.active}
+          spy={true}
+          smooth={true}
+          // offset={-20}
+          duration={500}
+        >
           <li className={styles.navItem}>
             <span role="img" className={styles.iconWrapper}>
               <IoMdContact className={`${styles.icon} ${styles.activeIcon}`} />
             </span>
-            <span className={`${styles.title} ${styles.activeTitle}`}>Contacto</span>
+            <span className={`${styles.title} ${styles.activeTitle}`}>
+              Contacto
+            </span>
           </li>
         </Link>
         <li onClick={handleMenuClick} className={styles.navItem}>

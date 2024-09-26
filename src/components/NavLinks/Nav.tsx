@@ -20,6 +20,8 @@ const Nav: React.FC = () => {
             to={tab.href}
             spy={true}
             smooth={true}
+            offset={-70}
+            duration={100}
             activeClass={styles.active}
           >
             {tab.title}
