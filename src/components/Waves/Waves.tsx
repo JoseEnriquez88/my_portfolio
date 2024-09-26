@@ -1,6 +1,6 @@
+import styles from "./waves.module.css";
 import { Fragment } from "react";
 import { motion } from "framer-motion";
-import styles from "./waves.module.css";
 import { svgVariants } from "@/utils/motions/wavesMotion";
 
 const Waves = () => {
