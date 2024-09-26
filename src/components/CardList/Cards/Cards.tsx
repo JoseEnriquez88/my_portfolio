@@ -37,7 +37,7 @@ const Content: React.FC = () => {
                     src={project.image}
                     alt="image"
                     className={styles.image}
-                    width={500}
+                    width={1000}
                     height={350}
                   />
                 </div>
@@ -107,7 +107,7 @@ const Content: React.FC = () => {
                     src={project.image}
                     alt="image"
                     className={styles.image}
-                    width={500}
+                    width={1000}
                     height={350}
                   />
                 </div>
