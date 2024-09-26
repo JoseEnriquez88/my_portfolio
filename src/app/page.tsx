@@ -1,4 +1,5 @@
 "use client";
+import "./page.css";
 import { Fragment, useState, useEffect } from "react";
 import Loader from "@/components/Loader/Loader";
 import Hero from "@/components/Hero/Hero";
@@ -19,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Fragment>
+    <div className="page">
       {loading ? (
         <Loader />
       ) : (
@@ -39,6 +40,6 @@ export default function Home() {
           </section>
         </Fragment>
       )}
-    </Fragment>
+    </div>
   );
 }
