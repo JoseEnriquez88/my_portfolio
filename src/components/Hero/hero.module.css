@@ -105,3 +105,17 @@
     margin-top: -500px;
   }
 }
+
+@media (max-width: 428px) {
+  .container,
+  .wrapper {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .container,
+  .wrapper {
+    width: 100vw;
+  }
+}
