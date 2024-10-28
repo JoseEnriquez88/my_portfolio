@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Content from "./Content/Content";
-import Cards from "./Cards/Cards";
+import { Content } from "./Content";
+import { Cards } from "./Cards";
 
 const CardsList: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
