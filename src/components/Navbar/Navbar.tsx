@@ -1,9 +1,9 @@
 "use client";
 import styles from "./navbar.module.css";
-import Image from "next/image";
+import { Nav } from "../NavLinks/Nav";
 import { Link } from "react-scroll";
-import Nav from "../NavLinks/Nav";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState<boolean>(false);
