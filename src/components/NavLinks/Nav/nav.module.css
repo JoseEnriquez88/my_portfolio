@@ -1,0 +1,28 @@
+.container {
+  list-style: none;
+  color: var(--color-text-color);
+  font-weight: bold;
+  z-index: 2;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav a {
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+}
+
+.active {
+  transition: color 0.2s ease-in-out;
+  color: var(--color-green2);
+}
