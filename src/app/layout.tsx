@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
-      <body> {children}</body>
+      <body>{children}</body>
     </html>
   );
 }
