@@ -1,11 +1,11 @@
 "use client";
 import { Fragment, useState, useEffect } from "react";
-import { Loader } from "@/components/Loader";
-import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
-import { Projects } from "@/components/Projects";
-import { About } from "@/components/About";
-import { Contact } from "@/components/Contact";
+import Loader from "@/components/Loader/Loader";
+import Hero from "@/components/Hero/Hero";
+import Navbar from "@/components/Navbar/Navbar";
+import Projects from "@/components/Projects/Projects";
+import About from "@/components/About/About";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
