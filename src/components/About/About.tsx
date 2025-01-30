@@ -12,6 +12,7 @@ import socials from "@/utils/socials";
 import StackSlider from "../StackSlider/StackSlider";
 import { MdEmail } from "react-icons/md";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
+import { aboutBio } from "@/utils/text";
 
 const About: React.FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -63,13 +64,7 @@ const About: React.FC = () => {
                   initial="initial"
                   animate={isInView && "animate"}
                 >
-                  Soy un desarrollador web con fuertes habilidades en HTML, CSS
-                  y JavaScript, lo que me permite crear interfaces atractivas.
-                  Además, tengo experiencia desarrolando con tecnologías como
-                  React, React Native, Next y Redux/Toolkit. Del lado del
-                  servidor, utilizo Express y bases de datos relacionales como
-                  SQL, Prisma y PostgreSQL para garantizar un rendimiento
-                  eficiente y una gestión de datos eficaz.
+                  {aboutBio}
                 </motion.article>
                 <motion.div
                   className={styles.socialsContainer}
