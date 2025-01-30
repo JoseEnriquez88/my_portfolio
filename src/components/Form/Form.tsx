@@ -4,12 +4,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import formValidation from "@/utils/formValidation";
 import { FormData } from "@/utils/types";
-import {
-  successNotify,
-  warnNotify,
-  errorNotify,
-  emailWarnNotify,
-} from "@/utils/toastify";
+import { successNotify, errorNotify } from "@/utils/toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
