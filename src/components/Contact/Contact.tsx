@@ -3,10 +3,10 @@ import styles from "./contact.module.css";
 import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { titleVariants } from "@/utils/motions/contactMotion";
-import { Form } from "../Form";
-import { ItemsContact } from "../ItemsContact";
-import { Footer } from "../Footer";
-import { NavbarBottom } from "../NavbarBottom";
+import Form from "../Form/Form";
+import ItemsContact from "../ItemsContact/ItemsContact";
+import Footer from "../Footer/Footer";
+import NavbarBottom from "../NavbarBottom/NavbarBottom";
 
 const Contact: React.FC = () => {
   const ref = useRef<HTMLHeadingElement | null>(null);
