@@ -1,6 +1,6 @@
 "use client";
 import styles from "./navbar.module.css";
-import { Nav } from "../NavLinks/Nav";
+import Nav from "../NavLinks/Nav/Nav";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import Image from "next/image";
