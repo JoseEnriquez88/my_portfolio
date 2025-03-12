@@ -23,14 +23,14 @@ const Content: React.FC = () => {
       animate={isInView && "animate"}
       ref={ref}
     >
-      {projects.data.map((project, index) => (
+      {projects.data.map((project) => (
         <motion.div
           className={styles.cardContainer}
-          key={index}
+          key={project.id}
           variants={cardsVariants}
         >
           <div className={styles.card}>
-            {index % 2 !== 0 ? (
+            {project.id % 2 !== 0 ? (
               <>
                 <div className={styles.frontContent}>
                   <Image
